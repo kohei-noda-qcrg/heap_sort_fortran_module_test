@@ -1,9 +1,9 @@
 program main
-    use heap_sort
+    use module_heapsort
     implicit none
     integer :: i
     integer, allocatable :: s(:), s_2(:)
-    real, allocatable :: s_3(:)
+    real(8), allocatable :: s_3(:)
     allocate (s(100))
     do i = 1, 100
         s(i) = 100 - i
@@ -20,8 +20,8 @@ program main
     print *, s_2
     print *, size(s_2)
     allocate (s_3(3))
-    s_3(1) = 3.141592
-    s_3(2) = 1.41421356
+    s_3(1) = 3.1415926
+    s_3(2) = 1.4142135
     s_3(3) = 1.7320508
     print *, s_3
     call heapSort(s_3)

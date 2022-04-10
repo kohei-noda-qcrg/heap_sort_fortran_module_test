@@ -14,8 +14,8 @@ contains
     end subroutine swapInt
     subroutine swapReal(a, b)
         implicit none
-        real temp
-        real, INTENT(INOUT) :: a, b
+        real(8) temp
+        real(8), INTENT(INOUT) :: a, b
         temp = a
         a = b
         b = temp
@@ -32,8 +32,8 @@ contains
     end subroutine swapArrayInt
     subroutine swapArrayReal(array, a, b)
         implicit none
-        real temp
-        real, INTENT(INOUT) :: array(:)
+        real(8) temp
+        real(8), INTENT(INOUT) :: array(:)
         integer, INTENT(IN) :: a, b
         temp = array(a)
         array(a) = array(b)

@@ -1,4 +1,4 @@
-module heap_sort
+module module_heapsort
     use module_swap
     interface heapSort
         module procedure heapSortInt, heapSortReal
@@ -41,7 +41,7 @@ contains
 
     subroutine heapifyReal(array, first, last)
         implicit none
-        real, INTENT(INOUT) :: array(:)
+        real(8), INTENT(INOUT) :: array(:)
         integer, INTENT(IN) :: first, last
         integer ::  parent, child
         parent = first
@@ -56,7 +56,7 @@ contains
     end subroutine heapifyReal
     subroutine heapSortReal(s)
         implicit none
-        real, INTENT(INOUT) :: s(:)
+        real(8), INTENT(INOUT) :: s(:)
         integer :: array_size, i, idx
         i = 1
         array_size = size(s)
@@ -69,4 +69,4 @@ contains
             call heapify(s, 1, idx - 1)
         end do
     end subroutine
-end module heap_sort
+end module module_heapsort

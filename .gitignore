@@ -2,3 +2,4 @@
 *.mod
 *.i90
 main
+*.findent.tmp
