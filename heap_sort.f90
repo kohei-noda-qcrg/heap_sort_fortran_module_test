@@ -1,5 +1,8 @@
 module module_heapsort
     use module_swap
+    implicit none
+    private
+    public heapSort
     interface heapSort
         module procedure heapSortInt, heapSortReal
     end interface heapSort
