@@ -7,7 +7,7 @@ Fortran90による1次元配列(integer,real)のヒープソート実装
 ただしWikipediaにもある通り安定ソートではないが、1次元配列のみのサポートなので問題は発生しえない  
 
 ## 使い方
-[FortranのModule機能](https://amanotk.github.io/fortran-resume-public/chap09.html)を用いて外部から
+[FortranのModule機能](https://amanotk.github.io/fortran-resume-public/chap09.html)を用いて実装しているので、外部から
 
 ```fortran
    use module_heapsort
